@@ -61,6 +61,11 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>minecraft-server</artifactId>
+            <version>1.14.4-R0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>

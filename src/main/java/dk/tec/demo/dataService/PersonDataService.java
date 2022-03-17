@@ -10,23 +10,27 @@ import java.util.List;
 public class PersonDataService {
 
     public List<Person> getAllPersons() {
-        MariaDB dbh = new MariaDB();
-        return inMemDB.getInstance().getAllPersons();
+        MariaDB db = new MariaDB();
+        return db.getAllPersons();
     }
 
     public Person getPerson(int persId){
-        return inMemDB.getInstance().getPersen(persId);
+        MariaDB db = new MariaDB();
+        return db.getPerson(persId);
     }
 
     public int updatePerson(int persId, Person pers) {
-        return inMemDB.getInstance().updatePersList(persId, pers);
+        MariaDB db = new MariaDB();
+        return db.updatePersList(persId, pers);
     }
 
     public int deletePerson(int persId) {
-        return inMemDB.getInstance().deleteFromPersList(persId);
+        MariaDB db = new MariaDB();
+        return db.deletePerson(persId);
     }
 
     public int addPerson(Person pers){
-        return inMemDB.getInstance().insertIntoPersList(pers);
+        MariaDB db = new MariaDB();
+        return db.addPerson(pers);
     }
 }
